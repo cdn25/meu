@@ -451,97 +451,56 @@ a div {
   font-weight: bold;
   line-height: normal;
 }
-.curtain.left {
-  position: absolute;
-  top: 0;
-  left: 0;
+.leftcurtain {
   width: 50%;
   height: 100%;
-  background: url("https://cdn.statically.io/gh/cdn25/meu/main/gate1.png") no-repeat
-    center center;
-  background-size: 100% 100%;
-  transform-origin: left center;
-  transition: transform 5s ease, opacity 5s ease;
-  z-index: 1;
-}
-
-/* Right Curtain */
-.curtain.right {
+  top: 0px;
+  left: 0px;
   position: absolute;
-  top: 0;
-  right: 0;
+  z-index: 2;
+}
+.rightcurtain {
   width: 50%;
   height: 100%;
-  background: url("https://cdn.statically.io/gh/cdn25/meu/main/gate2.png") no-repeat
-    center center;
-  background-size: 100% 100%;
-  transform-origin: right center;
-  transition: transform 5s ease, opacity 5s ease;
-  z-index: 1;
-}
-
-/* Extra Image (Bell) centered on screen */
-.arrow {
+  right: 0px;
+  top: 0px;
   position: absolute;
-  top: 16%;
+  z-index: 3;
+}
+.rightcurtain img,
+.leftcurtain img {
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  margin: 0px auto;
+  margin-top: 150px;
+}
+.rope {
+  position: absolute;
+  top: 5px;
+  left: 35%;
+  z-index: 4;
+}
+.centered {
+  position: absolute;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60px;
-  height: 130px;
-  background: url("https://cdn.statically.io/gh/cdn25/meu/main/arrow.gif") no-repeat
-    center center;
-  background-size: 100% 100%; /* Adjust as needed */
-  transition: transform 5s ease, opacity 5s ease;
-  cursor: pointer; /* Make the image clickable */
-  z-index: 2;
 }
-.arrow.hidden {
-  transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
-  opacity: 0; /* Fade out */
-  transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
-}
-/* Extra Image (Bell) centered on screen */
-.bail {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  background: url("https://cdn.statically.io/gh/cdn25/meu/main/jinglebell.png")
-    no-repeat center center;
-  background-size: 100% 100%; /* Adjust as needed */
-  transition: transform 4s ease, opacity 4s ease;
-  cursor: pointer; /* Make the image clickable */
-  z-index: 2;
-}
-.touchThis {
-  position: absolute;
-  top: 7%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-  display: flex; /* Flexbox for centering text */
-  justify-content: center;
+a.rope {
+  text-decoration: none;
   align-items: center;
-  font-size: 25px; /* Adjust text size */
-  font-weight: bold; /* Make the text bold */
+  text-align: center;
+  white-space: pre;
+}
+a div {
+  font-size: 25px;
   text-shadow: 1px 1px 3px white, 1px 1px 3px white, -1px -1px 3px white,
     -1px -1px 3px white;
-  color: red; /* Text color */
-  transition: transform 5s ease, opacity 5s ease;
-  cursor: pointer;
-  z-index: 2;
-}
-/* Pseudo-element for the text content */
-.touchThis::before {
-  content: "Touch This"; /* Text content */
-}
-.touchThis.hidden {
-  transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
-  opacity: 0; /* Fade out */
-  transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
+  color: red;
+  font-weight: bold;
+  line-height: normal;
 }
 </style>
 </head>
