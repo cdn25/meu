@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -13,11 +12,10 @@
     <meta property="og:url" content="https://meu-amor.com/" />
     <meta property="og:description" content="mensagem secreta" />
     <meta property="og:site_name" content="Te enviei uma mensagem surpresa 💌 abra isto 👆🏻" /> 
-    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/cdn25/meu/ogmsg.jpg" />
+    <meta property="og:image" content="https://cdn.statically.io/gh/cdn25/meu/main/ogmsg.jpg" />
 <style>
 body {
   background-color: white;
-  overflow-x: hidden!important;
 }
 @keyframes swing {
   20% {
@@ -274,7 +272,7 @@ a {
 }
 .username {
   color: black; /* Fallback: assume this color ON TOP of image */
-  background: url("https://cdn.jsdelivr.net/gh/cdn25/meu/sname.gif");
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/sname.gif");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: swing 4s infinite;
@@ -287,7 +285,7 @@ a {
 }
 .username1 {
   color: black; /* Fallback: assume this color ON TOP of image */
-  background: url("https://cdn.jsdelivr.net/gh/cdn25/meu/sname.gif");
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/sname.gif");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: swing 4s infinite;
@@ -381,99 +379,104 @@ a {
   font-size: 12px;
   text-align: center;
 }
-        .curtain.left {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%;
-            height: 100%;
-            background: url('https://cdn.jsdelivr.net/gh/cdn25/meu/gate1.png') no-repeat center center;
-            background-size: 100% 100%;
-            transform-origin: left center;
-            transition: transform 5s ease, opacity 5s ease;
-            z-index: 1;
-        }
+.curtain.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/gate1.png") no-repeat
+    center center;
+  background-size: 100% 100%;
+  transform-origin: left center;
+  transition: transform 5s ease, opacity 5s ease;
+  z-index: 1;
+}
 
-        /* Right Curtain */
-        .curtain.right {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            background: url('https://cdn.jsdelivr.net/gh/cdn25/meu/gate2.png') no-repeat center center;
-            background-size: 100% 100%;
-            transform-origin: right center;
-            transition: transform 5s ease, opacity 5s ease;
-            z-index: 1;
-        }
+/* Right Curtain */
+.curtain.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/gate2.png") no-repeat
+    center center;
+  background-size: 100% 100%;
+  transform-origin: right center;
+  transition: transform 5s ease, opacity 5s ease;
+  z-index: 1;
+}
 
-        /* Extra Image (Bell) centered on screen */
-        .arrow {
-            position: absolute;
-            top: 16%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 130px;
-            background: url('https://cdn.jsdelivr.net/gh/cdn25/meu/arrow.gif') no-repeat center center;
-            background-size: 100% 100%; /* Adjust as needed */
-            transition: transform 5s ease, opacity 5s ease;
-            cursor: pointer; /* Make the image clickable */
-            z-index: 2;
-        }
+/* Extra Image (Bell) centered on screen */
+.arrow {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 130px;
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/arrow.gif") no-repeat
+    center center;
+  background-size: 100% 100%; /* Adjust as needed */
+  transition: transform 5s ease, opacity 5s ease;
+  cursor: pointer; /* Make the image clickable */
+  z-index: 2;
+}
 .arrow.hidden {
-    transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
-    opacity: 0; /* Fade out */
-    transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
+  transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
+  opacity: 0; /* Fade out */
+  transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
 }
-        /* Extra Image (Bell) centered on screen */
-        .bail {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 150px;
-            height: 150px;
-            background: url('https://cdn.jsdelivr.net/gh/cdn25/meu/jinglebell.png') no-repeat center center;
-            background-size: 100% 100%; /* Adjust as needed */
-            transition: transform 4s ease, opacity 4s ease;
-            cursor: pointer; /* Make the image clickable */
-            z-index: 2;
-        }
+/* Extra Image (Bell) centered on screen */
+.bail {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/jinglebell.png")
+    no-repeat center center;
+  background-size: 100% 100%; /* Adjust as needed */
+  transition: transform 4s ease, opacity 4s ease;
+  cursor: pointer; /* Make the image clickable */
+  z-index: 2;
+}
 .bail.hidden {
-    transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
-    opacity: 0; /* Fade out */
-    transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
+  transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
+  opacity: 0; /* Fade out */
+  transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
 }
-        .touchThis {
-            position: absolute;
-            top: 7%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 150px;
-            height: 150px;
-            display: flex; /* Flexbox for centering text */
-            justify-content: center;
-            align-items: center;
-            font-size: 25px; /* Adjust text size */
-            font-weight: bold; /* Make the text bold */
-            text-shadow: 1px 1px 3px white, 1px 1px 3px white, -1px -1px 3px white,
+.touchThis {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  display: flex; /* Flexbox for centering text */
+  justify-content: center;
+  align-items: center;
+  font-size: 25px; /* Adjust text size */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 1px 1px 3px white, 1px 1px 3px white, -1px -1px 3px white,
     -1px -1px 3px white;
-            color: red; /* Text color */
-            transition: transform 5s ease, opacity 5s ease;
-            cursor: pointer;
-            z-index: 2;
-        }
-        /* Pseudo-element for the text content */
-        .touchThis::before {
-            content: "Touch This"; /* Text content */
-        }
+  color: red; /* Text color */
+  transition: transform 5s ease, opacity 5s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+/* Pseudo-element for the text content */
+.touchThis::before {
+  content: "Touch This"; /* Text content */
+}
 .touchThis.hidden {
-    transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
-    opacity: 0; /* Fade out */
-    transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
-}</style>
+  transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
+  opacity: 0; /* Fade out */
+  transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
+}
+</style>
 </head>
 
 <audio id="audiocracker" src="https://cdn.jsdelivr.net/gh/cdn25/meu/brazil1.mp3" autostart="false"></audio>
@@ -498,103 +501,103 @@ a {
 </div>
 <!-- Marquee Start -->
 <marquee class="m1" behavior="scroll" direction="up" scrolldelay="0">
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
 </marquee>
 <marquee class="m2" behavior="scroll" direction="down" scrolldelay="0">
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
 </marquee>
 
@@ -602,11 +605,11 @@ a {
 <div class="container">
 <div class="username simpleName"></div>
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/wish3.png" width="50%" height="4%" style="animation: pulse 2.5s infinite" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/wish3.png" width="50%" height="4%" style="animation: pulse 2.5s infinite" alt="" />
 <p id="demo"></p>
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/ch2024c.png" width="80%" height="30%" style="animation: tada 4s infinite" alt="" />
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/santaunder1.gif" width="45%" height="30%" alt="" />
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/santaunder2.gif" width="45%" height="30%" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/ch2024c.png" width="80%" height="30%" style="animation: tada 4s infinite" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/santaunder1.gif" width="45%" height="30%" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/santaunder2.gif" width="45%" height="30%" alt="" />
 
 <div class="GodMessage"> 
 <p class="line1">Que a Temporada de Natal</p>
@@ -662,14 +665,14 @@ var x = setInterval(function() {
             // Prevent the form's default action (page reload)
             event.preventDefault();
 
-            var textboxValue = document.getElementById('textbox').value;
+            var name = document.getElementById('textbox').value;
 
             // Check if the textbox value is empty
-            if (textboxValue.trim() === "") {
+            if (name.trim() === "") {
                 alert("Por favor, insira seu nome.");
             } else {
                 // Store the value in sessionStorage
-                sessionStorage.setItem('textboxValue', textboxValue);
+                sessionStorage.setItem('name', name);
                 // Redirect to the receiver page
                 window.location.href = 'share.html';
             }
@@ -742,32 +745,30 @@ touchThisContent.addEventListener('touchstart', function() {
     arrowImage.classList.add('hidden'); // Move and hide touchThis
     bailImage.classList.add('hidden'); // Move and hide the arrow image
 });
-// Set a timeout to reset the transformations after, say, 2 seconds (2000ms)
-setTimeout(function() {
-    leftCurtain.style.transition = 'transform 1s'; // Optional: add transition for smooth reset
-    rightCurtain.style.transition = 'transform 1s'; // Optional: add transition for smooth reset
-    leftCurtain.style.transform = 'rotateY(0deg) scale(1)';
-    rightCurtain.style.transform = 'rotateY(0deg) scale(1)';
-}, 2000); // 2000ms = 2 seconds
     </script>
-    <script>
-        // Function to get and decode URL parameter by name, with character replacements
-        function getUrlParameter(name) {
-            const urlParams = new URLSearchParams(window.location.search);
-            const paramValue = urlParams.has(name) ? urlParams.get(name) : 'Your Name'; // Default value 'Your Name'
-            
-            // Decode the URL parameter and replace '+' and '-' with a space
-            return decodeURIComponent(paramValue).replace(/\+|-|#|&|@|</g, ' '); // Replace + or - with space
+<script>
+    // Function to get and decode URL parameter by name, with character replacements
+    function getUrlParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        let paramValue = urlParams.has(name) ? urlParams.get(name) : null; // Get value or null if not found
+        
+        // If the parameter value is empty, null, or undefined, return 'Your Name'
+        if (!paramValue) {
+            return 'Your Name'; // Default value if parameter is empty, null, or undefined
         }
+        
+        // Decode the URL parameter and replace unwanted characters like '+' with space
+        return decodeURIComponent(paramValue).replace(/\+|-|#|&|@|</g, ' '); // Replace + or - with space
+    }
 
-        // Get and decode the 'n' parameter with replacements
-        const n_value = getUrlParameter('n');
+    // Get and decode the 'n' parameter with replacements
+    const n_value = getUrlParameter('n');
 
-        // Get all elements with the class "simpleName" and update their content
-        const simpleNameElements = document.getElementsByClassName("simpleName");
-        for (let element of simpleNameElements) {
-            element.textContent = `${n_value}`;
-        }
-    </script>
+    // Get all elements with the class "simpleName" and update their content
+    const simpleNameElements = document.getElementsByClassName("simpleName");
+    for (let element of simpleNameElements) {
+        element.textContent = n_value; // Set the value of the parameter as the text content
+    }
+</script>
 </body>
 </html>
