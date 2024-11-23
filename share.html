@@ -13,7 +13,29 @@
     <meta property="og:description" content="mensagem secreta" />
     <meta property="og:site_name" content="Te enviei uma mensagem surpresa 💌 abra isto 👆🏻" /> 
     <meta property="og:image" content="https://cdn.statically.io/gh/cdn25/meu/main/ogmsg.jpg" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="adx-gtag.js" defer></script>
+    <script>
+        // Get the current URL
+        var currentURL = window.location.href;
+
+        // Remove 'https://', 'http://', or 'file://'
+        var baseURL = currentURL.replace(/^https?:\/\//, '').replace(/^http?:\/\//, '');
+
+        // Remove parameters (anything after '?')
+        baseURL = baseURL.split('?')[0];
+
+        // Remove the file name (everything after the last slash)
+        var lastSlashIndex = baseURL.lastIndexOf('/');
+        if (lastSlashIndex !== -1) {
+            baseURL = baseURL.substring(0, lastSlashIndex); // Keep everything before the last slash
+        }
+
+        // Ensure the base URL ends with a slash
+        if (!baseURL.endsWith('/')) {
+            baseURL += '/';
+        }
+    </script>
 <style>
 body {
   background-color: white;
@@ -640,6 +662,10 @@ a div {
 
 
 <div class="container">
+
+<!-- Adsense Code -->
+<center><div id="ad1"></div></center>
+
 <div class="username simpleName"></div>
 
 <img src="https://cdn.statically.io/gh/cdn25/meu/main/wish4.png" width="50%" height="4%" style="animation: pulse 2.5s infinite" alt="" />
@@ -655,6 +681,9 @@ a div {
 <p class="line4">para você e sua família.</p>
 <p class="line5">Feliz Natal!</p>
 </div>
+
+<!-- Adsense Code -->
+<center><div id="ad2"></div></center>
 
 <div class="username1 simpleName">Your Name</div>
 
@@ -741,26 +770,33 @@ var x = setInterval(function() {
 
   if (isMobileDevice()) {
       // Create the WhatsApp link for mobile users
-      var whatsappLink = 'whatsapp://send?text=😳Have you seen this??%0A*' + name + '* sent you a surprise message 😍%0A *💁 Open this* %0A👇👇%0A my-msg.co/wow/?n=' + yname + '%26t=w %0A';
+      var whatsappLink = 'whatsapp://send?text=😳Have you seen this??%0A*' + name + '* sent you a surprise message 😍%0A *💁 Open this* %0A👇👇%0A '+ baseURL +'?n=' + yname + ' %0A';
       var whatsappImg = '<a href="' + whatsappLink + '" data-os="Whatsapp"><img src="https://cdn.statically.io/gh/cdn25/meu/main/wp.png" alt="WhatsApp"></a>';
       container.innerHTML += whatsappImg;
 
       // Create the Messenger link for mobile users
-      var messengerLink = 'fb-messenger://share/?link=https%3A%2F%2Fmy-msg.co/wow/?n=' + yname + '%26t=fm';
+      var messengerLink = 'fb-messenger://share/?link=https%3A%2F%2F'+ baseURL +'?n=' + yname + '%26t=fm';
       var messengerImg = '<a href="' + messengerLink + '" data-os="Messenger"><img src="https://cdn.statically.io/gh/cdn25/meu/main/fb.png" alt="Messenger"></a>';
       container.innerHTML += messengerImg;
 
   } else {
       // Create the WhatsApp link for desktop users
-      var whatsappLinkDesktop = 'https://api.whatsapp.com/send?text=😳Have you seen this??%0A*' + name + '* sent you a surprise message 😍%0A *💁 Open this* %0A👇👇%0A my-msg.co/wow/?n=' + yname + '%26t=w %0A';
+      var whatsappLinkDesktop = 'https://api.whatsapp.com/send?text=😳Have you seen this??%0A*' + name + '* sent you a surprise message 😍%0A *💁 Open this* %0A👇👇%0A '+ baseURL +'?n=' + yname + ' %0A';
       var whatsappImgDesktop = '<a href="' + whatsappLinkDesktop + '" target="_blank" data-os="Whatsapp"><img src="https://cdn.statically.io/gh/cdn25/meu/main/wp.png" alt="WhatsApp"></a>';
       container.innerHTML += whatsappImgDesktop;
 
       // Create the Facebook Messenger link for desktop users
-      var messengerLinkDesktop = 'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmy-msg.co/wow/?n=' + yname + '%26t=fa';
+      var messengerLinkDesktop = 'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F'+ baseURL +'?n=' + yname + '%26t=fa';
       var messengerImgDesktop = '<a href="' + messengerLinkDesktop + '" target="_blank" data-os="Facebook"><img src="https://cdn.statically.io/gh/cdn25/meu/main/fb.png" alt="Facebook Messenger"></a>';
       container.innerHTML += messengerImgDesktop;
   }
+</script>
+<script>
+        // Load ads and initialize analytics after the page content has loaded
+        window.onload = function() {
+            loadAds();            // Load AdSense ads
+            initializeAnalytics();  // Initialize Google Analytics
+        };
 </script>
 </body>
 </html>
