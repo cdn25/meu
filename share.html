@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -13,7 +12,8 @@
     <meta property="og:url" content="https://meu-amor.com/" />
     <meta property="og:description" content="mensagem secreta" />
     <meta property="og:site_name" content="Te enviei uma mensagem surpresa 💌 abra isto 👆🏻" /> 
-    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/cdn25/meu/ogmsg.jpg" />
+    <meta property="og:image" content="https://cdn.statically.io/gh/cdn25/meu/main/ogmsg.jpg" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <style>
 body {
   background-color: white;
@@ -271,7 +271,7 @@ a {
 }
 .username {
   color: black; /* Fallback: assume this color ON TOP of image */
-  background: url("https://cdn.jsdelivr.net/gh/cdn25/meu/sname.gif");
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/sname.gif");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: swing 4s infinite;
@@ -284,7 +284,7 @@ a {
 }
 .username1 {
   color: black; /* Fallback: assume this color ON TOP of image */
-  background: url("https://cdn.jsdelivr.net/gh/cdn25/meu/sname.gif");
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/sname.gif");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: swing 4s infinite;
@@ -354,11 +354,11 @@ a {
   text-transform: uppercase;
 }
 .platforms a:nth-child(1) {
-  background-color: #1a5276;
+  background-color: #36454F;
   left: 60px;
 }
 .platforms a:nth-child(2) {
-  background-color: #1a5276;
+  background-color: #36454F;
   left: 155px;
 }
 .platforms:target a {
@@ -429,94 +429,99 @@ a div {
   font-weight: bold;
   line-height: normal;
 }
-        .curtain.left {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%;
-            height: 100%;
-            background: url('https://cdn.jsdelivr.net/gh/cdn25/meu/gate1.png') no-repeat center center;
-            background-size: 100% 100%;
-            transform-origin: left center;
-            transition: transform 5s ease, opacity 5s ease;
-            z-index: 1;
-        }
-
-        /* Right Curtain */
-        .curtain.right {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            background: url('https://cdn.jsdelivr.net/gh/cdn25/meu/gate2.png') no-repeat center center;
-            background-size: 100% 100%;
-            transform-origin: right center;
-            transition: transform 5s ease, opacity 5s ease;
-            z-index: 1;
-        }
-
-        /* Extra Image (Bell) centered on screen */
-        .arrow {
-            position: absolute;
-            top: 16%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 130px;
-            background: url('https://cdn.jsdelivr.net/gh/cdn25/meu/arrow.gif') no-repeat center center;
-            background-size: 100% 100%; /* Adjust as needed */
-            transition: transform 5s ease, opacity 5s ease;
-            cursor: pointer; /* Make the image clickable */
-            z-index: 2;
-        }
-.arrow.hidden {
-    transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
-    opacity: 0; /* Fade out */
-    transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
+.curtain.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/gate1.png") no-repeat
+    center center;
+  background-size: 100% 100%;
+  transform-origin: left center;
+  transition: transform 5s ease, opacity 5s ease;
+  z-index: 1;
 }
-        /* Extra Image (Bell) centered on screen */
-        .bail {
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 150px;
-            height: 150px;
-            background: url('https://cdn.jsdelivr.net/gh/cdn25/meu/jinglebell.png') no-repeat center center;
-            background-size: 100% 100%; /* Adjust as needed */
-            transition: transform 4s ease, opacity 4s ease;
-            cursor: pointer; /* Make the image clickable */
-            z-index: 2;
-        }
-        .touchThis {
-            position: absolute;
-            top: 7%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 150px;
-            height: 150px;
-            display: flex; /* Flexbox for centering text */
-            justify-content: center;
-            align-items: center;
-            font-size: 25px; /* Adjust text size */
-            font-weight: bold; /* Make the text bold */
-            text-shadow: 1px 1px 3px white, 1px 1px 3px white, -1px -1px 3px white,
+
+/* Right Curtain */
+.curtain.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/gate2.png") no-repeat
+    center center;
+  background-size: 100% 100%;
+  transform-origin: right center;
+  transition: transform 5s ease, opacity 5s ease;
+  z-index: 1;
+}
+
+/* Extra Image (Bell) centered on screen */
+.arrow {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 130px;
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/arrow.gif") no-repeat
+    center center;
+  background-size: 100% 100%; /* Adjust as needed */
+  transition: transform 5s ease, opacity 5s ease;
+  cursor: pointer; /* Make the image clickable */
+  z-index: 2;
+}
+.arrow.hidden {
+  transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
+  opacity: 0; /* Fade out */
+  transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
+}
+/* Extra Image (Bell) centered on screen */
+.bail {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: url("https://cdn.statically.io/gh/cdn25/meu/main/jinglebell.png")
+    no-repeat center center;
+  background-size: 100% 100%; /* Adjust as needed */
+  transition: transform 4s ease, opacity 4s ease;
+  cursor: pointer; /* Make the image clickable */
+  z-index: 2;
+}
+.touchThis {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  display: flex; /* Flexbox for centering text */
+  justify-content: center;
+  align-items: center;
+  font-size: 25px; /* Adjust text size */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 1px 1px 3px white, 1px 1px 3px white, -1px -1px 3px white,
     -1px -1px 3px white;
-            color: red; /* Text color */
-            transition: transform 5s ease, opacity 5s ease;
-            cursor: pointer;
-            z-index: 2;
-        }
-        /* Pseudo-element for the text content */
-        .touchThis::before {
-            content: "Touch This"; /* Text content */
-        }
+  color: red; /* Text color */
+  transition: transform 5s ease, opacity 5s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+/* Pseudo-element for the text content */
+.touchThis::before {
+  content: "Touch This"; /* Text content */
+}
 .touchThis.hidden {
-    transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
-    opacity: 0; /* Fade out */
-    transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
-}</style>
+  transform: translate(-50%, -150%) translateY(-100%); /* Move to the top */
+  opacity: 0; /* Fade out */
+  transition: transform 2s ease, opacity 2s ease; /* Shorter transition for faster effect */
+}
+</style>
 </head>
 
 <audio id="audiocracker" src="https://cdn.jsdelivr.net/gh/cdn25/meu/brazil1.mp3" autostart="false"></audio>
@@ -533,103 +538,103 @@ a div {
 
 <!-- Marquee Start -->
 <marquee class="m1" behavior="scroll" direction="up" scrolldelay="0">
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
 </marquee>
 <marquee class="m2" behavior="scroll" direction="down" scrolldelay="0">
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m1.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m1.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m2.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m2.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m3.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m3.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m4.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m4.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m5.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m5.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m6.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m6.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m7.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m7.png" height="25px" width="25px" alt="" />
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/m8.png" height="25px" width="25px" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/m8.png" height="25px" width="25px" alt="" />
 
 </marquee>
 
@@ -637,11 +642,11 @@ a div {
 <div class="container">
 <div class="username simpleName"></div>
 
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/wish3.png" width="50%" height="4%" style="animation: pulse 2.5s infinite" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/wish4.png" width="50%" height="4%" style="animation: pulse 2.5s infinite" alt="" />
 <p id="demo"></p>
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/ch2024c.png" width="80%" height="30%" style="animation: tada 4s infinite" alt="" />
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/santaunder1.gif" width="45%" height="30%" alt="" />
-<img src="https://cdn.jsdelivr.net/gh/cdn25/meu/santaunder2.gif" width="45%" height="30%" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/ch2024f.png" width="80%" height="30%" style="animation: tada 4s infinite" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/under3.gif" width="45%" height="30%" alt="" />
+<img src="https://cdn.statically.io/gh/cdn25/meu/main/under4.gif" width="45%" height="30%" alt="" />
 
 <div class="GodMessage"> 
 <p class="line1">Desejo que este Natal</p>
@@ -653,12 +658,25 @@ a div {
 
 <div class="username1 simpleName">Your Name</div>
 
-<div class="footer">
-    <form id="myForm">
-    <input type="text" id="textbox" placeholder="👉 insira seu nome..">
-    <button class="submit" type="submit">👉 ver</button>
-    </form>
+<a class="shareBtn" id="div1" href="#platforms">Compartilhe com amigos</a>
+<a class="shareShow" id="div2" href="#close" style="display: none;">Fechar</a>
+<div class="platforms" id="platforms">
+    <div id="social-share-buttons">
+
 </div>
+<script>
+// Click to show and hide share buttons
+$(document).ready(function(){
+$(".shareBtn").click(function(){
+$(".shareBtn").hide();
+$(".shareShow").show();
+});
+$(".shareShow").click(function(){
+$(".shareShow").hide();
+$(".shareBtn").show();
+});
+});
+</script> 
 </div>
 <script> 
 // Set the date we're counting down to
@@ -690,17 +708,59 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
-    <script>
-        // Check if there is a value in sessionStorage
-        var recordName = sessionStorage.getItem('textboxValue');
-        var textboxValue = decodeURIComponent(recordName).replace(/\+|-|#|&|@|</g, ' '); // Replace + or - with space
-        var yname = decodeURIComponent(recordName).replace(/\+|-|#|&|@|</g, '-'); // Replace + or - with space
+<script>
+  // Check if there is a value in sessionStorage
+  var recordName = sessionStorage.getItem('name');
 
-        // Get all elements with the class "simpleName" and update their content
-        const simpleNameElements = document.getElementsByClassName("simpleName");
-        for (let element of simpleNameElements) {
-            element.textContent = textboxValue;
-        }
-    </script>
+  // If no value is found, use a default value
+  if (!recordName) {
+      recordName = "Your Name";  // Default text when no record is found
+  }
+
+  // Decode the value (whether it's from sessionStorage or the default)
+  var decodedValue = decodeURIComponent(recordName);
+
+  // Replace certain characters (adjust if needed)
+  var name = decodedValue.replace(/[+\-#&@<]/g, ' ');  // Replace unwanted characters with space
+  var yname = name.replace(/ /g, '-');         // Replace unwanted characters with hyphen
+
+  // Get all elements with the class "simpleName" and update their content
+  const simpleNameElements = document.getElementsByClassName("simpleName");
+  for (let element of simpleNameElements) {
+      element.textContent = name;
+  }
+</script>
+<script>
+  // Function to detect if the user is on a mobile device
+  function isMobileDevice() {
+      return window.innerWidth <= 768;  // Typically 768px is the breakpoint for tablets/mobiles
+  }
+
+  // Create a container for the social share buttons
+  var container = document.getElementById("social-share-buttons");
+
+  if (isMobileDevice()) {
+      // Create the WhatsApp link for mobile users
+      var whatsappLink = 'whatsapp://send?text=😳Have you seen this??%0A*' + name + '* sent you a surprise message 😍%0A *💁 Open this* %0A👇👇%0A my-msg.co/wow/?n=' + yname + '%26t=w %0A';
+      var whatsappImg = '<a href="' + whatsappLink + '" data-os="Whatsapp"><img src="https://cdn.statically.io/gh/cdn25/meu/main/wp.png" alt="WhatsApp"></a>';
+      container.innerHTML += whatsappImg;
+
+      // Create the Messenger link for mobile users
+      var messengerLink = 'fb-messenger://share/?link=https%3A%2F%2Fmy-msg.co/wow/?n=' + yname + '%26t=fm';
+      var messengerImg = '<a href="' + messengerLink + '" data-os="Messenger"><img src="https://cdn.statically.io/gh/cdn25/meu/main/fb.png" alt="Messenger"></a>';
+      container.innerHTML += messengerImg;
+
+  } else {
+      // Create the WhatsApp link for desktop users
+      var whatsappLinkDesktop = 'https://api.whatsapp.com/send?text=😳Have you seen this??%0A*' + name + '* sent you a surprise message 😍%0A *💁 Open this* %0A👇👇%0A my-msg.co/wow/?n=' + yname + '%26t=w %0A';
+      var whatsappImgDesktop = '<a href="' + whatsappLinkDesktop + '" target="_blank" data-os="Whatsapp"><img src="https://cdn.statically.io/gh/cdn25/meu/main/wp.png" alt="WhatsApp"></a>';
+      container.innerHTML += whatsappImgDesktop;
+
+      // Create the Facebook Messenger link for desktop users
+      var messengerLinkDesktop = 'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmy-msg.co/wow/?n=' + yname + '%26t=fa';
+      var messengerImgDesktop = '<a href="' + messengerLinkDesktop + '" target="_blank" data-os="Facebook"><img src="https://cdn.statically.io/gh/cdn25/meu/main/fb.png" alt="Facebook Messenger"></a>';
+      container.innerHTML += messengerImgDesktop;
+  }
+</script>
 </body>
 </html>
