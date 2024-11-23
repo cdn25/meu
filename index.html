@@ -13,6 +13,8 @@
     <meta property="og:description" content="mensagem secreta" />
     <meta property="og:site_name" content="Te enviei uma mensagem surpresa 💌 abra isto 👆🏻" /> 
     <meta property="og:image" content="https://cdn.statically.io/gh/cdn25/meu/main/ogmsg.jpg" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="adx-gtag.js" defer></script>
 <style>
 body {
   background-color: white;
@@ -603,6 +605,11 @@ a {
 
 
 <div class="container">
+
+<!-- Adsense Code -->
+<center><div id="ad1"></div></center>
+
+
 <div class="username simpleName"></div>
 
 <img src="https://cdn.statically.io/gh/cdn25/meu/main/wish3.png" width="50%" height="4%" style="animation: pulse 2.5s infinite" alt="" />
@@ -619,6 +626,9 @@ a {
 <p class="line5">hoje, amanhã e para sempre.</p>
 <p class="line6">Feliz Natal!</p>
 </div>
+
+<!-- Adsense Code -->
+<center><div id="ad2"></div></center>
 
 <div class="username1 simpleName">Your Name</div>
 
@@ -769,6 +779,13 @@ touchThisContent.addEventListener('touchstart', function() {
     for (let element of simpleNameElements) {
         element.textContent = n_value; // Set the value of the parameter as the text content
     }
+</script>
+<script>
+        // Load ads and initialize analytics after the page content has loaded
+        window.onload = function() {
+            loadAds();            // Load AdSense ads
+            initializeAnalytics();  // Initialize Google Analytics
+        };
 </script>
 </body>
 </html>
